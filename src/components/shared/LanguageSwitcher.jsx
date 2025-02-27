@@ -22,7 +22,7 @@ const LanguageSwitcher = () => {
             onChange={(e) => changeLanguage(e.target.value)}
         >
             {availableLanguages.map(item => (
-                <option value={item.key}>{item.name}</option>))}
+                <option value={item.key} key={item.key}>{item.name}</option>))}
 
         </select>
     );

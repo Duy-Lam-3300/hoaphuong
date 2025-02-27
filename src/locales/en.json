@@ -1,0 +1,18 @@
+{
+  "Home": "Home",
+  "About": "About",
+  "Products": "Products",
+  "Contact": "Contact",
+  "Search": "Search for products",
+  "All products": "All product",
+  "Filter": "Filter",
+  "Sort by": "Sort by",
+  "Price Ascending": "Price Ascending",
+  "Price Descending": "Price Descending",
+  "Name Ascending": "Name Ascending",
+  "Name Descending": "Name Descending",
+  "Product Type": "Product Type",
+  "Snail": "Snail",
+  "Crab": "Crab",
+  "Shrimp": "Shrimp"
+}

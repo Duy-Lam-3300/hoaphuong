@@ -1,1 +1,0 @@
-export const availableLanguages = [{ key: "en", name: "English" }, { key: "vi", name: "Việt Nam" }]

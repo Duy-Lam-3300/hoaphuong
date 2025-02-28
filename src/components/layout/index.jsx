@@ -10,9 +10,11 @@ export default function MainLayout({ children }) {
             <div>
                 <Navigation />
             </div>
+            <hr />
             <div className="grid grid-cols-12">
                 <Outlet />
             </div>
+            <hr />
             <div>
                 <Footer />
             </div>

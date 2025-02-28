@@ -7,7 +7,7 @@ import { navLinkMenu } from "../../services/dataConfict";
 import { useTranslation } from "react-i18next";
 
 export default function Navigation() {
-    const {t}=useTranslation();
+    const { t } = useTranslation();
     const [isOpenAndroidMenu, setOpenAndroidMenu] = useState(false);
 
     return (

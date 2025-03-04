@@ -13,7 +13,7 @@ export default function Navigation() {
     return (
         <nav className="w-full grid grid-cols-12">
             {/* Desktop Navigation */}
-            <div className="hidden xl:flex justify-between items-center h-[5.5rem] col-span-10 col-start-2">
+            <div className="hidden xl:flex justify-between items-center h-[4rem] col-span-10 col-start-2">
                 <div className="flex gap-10 text-xl text-gray-500">
                     {navLinkMenu.map(item => (
                         <NavLink

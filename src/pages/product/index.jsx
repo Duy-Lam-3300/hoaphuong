@@ -86,7 +86,7 @@ export default function Products() {
         nav(id);
     }
     const [viewGrid, setViewGrid] = useState(true);
-    const CheckBoxInput = (name, value) => (
+    const checkBoxInput = (name, value) => (
         <div className="flex items-center space-x-2">
             <input type="checkbox" id={value} value={value} name={name} className="cursor-pointer" />
             <label htmlFor={value} className="cursor-pointer">{value}</label>
@@ -106,7 +106,7 @@ export default function Products() {
                                 <h3 className="font-semibold text-lg  pl-4 border-b-1 mb-4">{item.name}</h3>
                                 {item.value.map((child, childIndex) => (
                                     <div key={childIndex} className="text-lg pl-4">
-                                        {CheckBoxInput(child.name, child.name)}
+                                        {checkBoxInput(child.name, child.name)}
                                     </div>
                                 ))}
                             </div>
@@ -114,20 +114,11 @@ export default function Products() {
                     </div>
                 </form>
                 <div className="col-span-12 sm:col-span-9 md:col-span-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                    <div className="col-span-full text-2xl font-semibold pt-4">{t("All products")}</div>
+                    <div className="col-span-full text-2xl font-semibold pt-4">{t("ALL PRODUCTS")}</div>
                     <div className="col-span-full flex justify-between">
                         <div className="flex gap-4">
                             <button className={` border p-1 w-fit h-fit text-3xl rounded-sm cursor-pointer ${viewGrid ? "opacity-100" : "opacity-50"}`} onClick={() => setViewGrid(true)}><HiOutlineViewGrid /></button>
                             <button className={` border p-1 w-fit h-fit text-3xl rounded-sm cursor-pointer ${viewGrid ? "opacity-50" : "opacity-100"}`} onClick={() => setViewGrid(false)}><HiOutlineMenu /></button>
-                        </div>
-                        <div className={`border-2 w-fit h-fit px-2 relative border-gray-200  rounded-sm text-gray-500 focus-within:text-black focus-within:border-black `}>
-                            <label htmlFor="sortBy">{t("Sort by")}:</label>
-                            <select name="sort" id="sortBy" className="outline-0 px-1 py-1" >
-                                {selectOptions.map((item, key) => (
-                                    <option value={item.value} key={key}>{item.name}</option>
-                                ))}
-                            </select>
-
                         </div>
                     </div>
                     {products?.map((pro, index) =>
